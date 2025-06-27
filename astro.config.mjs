@@ -1,20 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
-import { defineCollection, z } from 'astro:content';
-
-const blog = defineCollection({
-  schema: z.object({
-    title: z.string(),
-    description: z.string(),
-    pubDate: z.coerce.date(),
-  }),
-});
+import { defineConfig } from 'astro/config';
+import mdx from '@astrojs/mdx';
 
 // https://astro.build/config
 export default defineConfig({
-  collections: {
-    blog,
-  },
+  base: '/tech-blog',
+  integrations: [mdx()],
   vite: {
     plugins: []
   }
