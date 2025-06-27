@@ -30,8 +30,8 @@ jobs:
 
       - name: Verify module resolution
         run: |
-          node -e "require('@astrojs/mdx')"
-          node -e "require('@astrojs/tailwind')"
+          node -e "import('@astrojs/mdx')"
+          node -e "import('@astrojs/tailwind')"
 
       - name: Explicitly install @astrojs/tailwind and verify
         run: |
