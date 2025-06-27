@@ -36,7 +36,7 @@ jobs:
           ls -R node_modules/@astrojs/tailwind
 
       - name: Set NODE_PATH
-        run: echo "NODE_PATH=$(npm root)" >> $GITHUB_ENV
+        run: echo "NODE_PATH=$(pwd)/node_modules" >> $GITHUB_ENV
 
       - name: Build Astro project
         run: npm run build
