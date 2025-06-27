@@ -1,0 +1,60 @@
+/* 阿部寛のHP風スタイル */
+
+body {
+    font-family: "MS PMincho", "Hiragino Mincho ProN", serif; /* 明朝体 */
+    background-color: #f0f0f0; /* 薄いグレーの背景 */
+    color: #333; /* 濃いグレーの文字色 */
+    margin: 0;
+    padding: 20px;
+    text-align: center; /* 中央寄せ */
+}
+
+a {
+    color: #0000cc; /* 青いリンク */
+    text-decoration: underline; /* 下線付き */
+}
+
+a:hover {
+    color: #cc0000; /* ホバーで赤 */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "MS PMincho", "Hiragino Mincho ProN", serif;
+    color: #000;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1em;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ccc; /* シンプルな枠線 */
+    padding: 5px;
+    background-color: #fff;
+    display: block; /* 中央寄せのためにブロック要素に */
+    margin: 10px auto; /* 中央寄せ */
+}
+
+table {
+    width: 80%;
+    margin: 20px auto; /* 中央寄せ */
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #e0e0e0;
+}
+
+/* その他の要素のスタイルも必要に応じて追加 */

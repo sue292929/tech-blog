@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
+);
+---
+
+<Layout>
+  <main>
+    <h1>AWS関連技術ブログ</h1>
+    <p>阿部寛のHP風デザインでお届けします。</p>
+
+    <section>
+      <h2>最新記事</h2>
+      <ul>
+        {
+          posts.map((post) => (
+            <li>
+              <a href={`/blog/${post.slug}/`}>{post.data.title}</a>
+              <p><small>{post.data.pubDate.toLocaleDateString()}</small></p>
+              <p>{post.data.description}</p>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </main>
+</Layout>
