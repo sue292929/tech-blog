@@ -16,10 +16,10 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '18' # Astroの推奨バージョンに合わせてください
+          node-version: '20' # Astroの推奨バージョンに合わせてください
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Build Astro project
         run: npm run build
