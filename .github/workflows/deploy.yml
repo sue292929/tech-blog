@@ -22,6 +22,14 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: List node_modules content
+        run: ls -R node_modules
+
+      - name: Verify module resolution
+        run: |
+          node -e "require('@astrojs/mdx')"
+          node -e "require('@astrojs/tailwind')"
+
       - name: Explicitly install @astrojs/tailwind and verify
         run: |
           npm install @astrojs/tailwind
