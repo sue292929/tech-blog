@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en" data-astro-cid-sckkx6r4> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.10.1"><title>Astro Basics</title><link rel="stylesheet" href="/src/styles/old-style.css"><style>html,body{margin:0;width:100%;height:100%}
+</style></head> <body data-astro-cid-sckkx6r4>  <main> <h1>AWS S3 の基本</h1> <p><small>10/27/2023</small></p> <h1 id="aws-s3-の基本">AWS S3 の基本</h1>
+<p>Amazon Simple Storage Service (Amazon S3) は、スケーラブルなオブジェクトストレージサービスです。ウェブサイトのホスティング、バックアップ、アーカイブなど、さまざまな用途で利用できます。</p>
+<h2 id="s3-の主要な概念">S3 の主要な概念</h2>
+<h3 id="バケット-bucket">バケット (Bucket)</h3>
+<p>S3 にデータを保存するためのコンテナです。バケット名はグローバルに一意である必要があります。</p>
+<h3 id="オブジェクト-object">オブジェクト (Object)</h3>
+<p>S3 に保存されるデータの実体です。ファイルとそのメタデータで構成されます。各オブジェクトはキー (Key) と呼ばれる一意の識別子を持ちます。</p>
+<h3 id="リージョン-region">リージョン (Region)</h3>
+<p>S3 バケットを作成する地理的な場所です。データのレイテンシー、コスト、規制要件などを考慮して選択します。</p>
+<h2 id="s3-の主な機能">S3 の主な機能</h2>
+<ul>
+<li><strong>静的ウェブサイトホスティング</strong>: S3 バケットを使用して静的ウェブサイトをホストできます。</li>
+<li><strong>バージョン管理</strong>: オブジェクトの複数のバージョンを保持し、誤って削除したり上書きしたりした場合に復元できます。</li>
+<li><strong>ライフサイクル管理</strong>: オブジェクトのライフサイクルルールを設定し、一定期間後に自動的にストレージクラスを変更したり、削除したりできます。</li>
+<li><strong>アクセス制御</strong>: IAM ポリシーやバケットポリシーを使用して、S3 リソースへのアクセスを制御できます。</li>
+</ul>
+<h2 id="s3-の料金">S3 の料金</h2>
+<p>S3 の料金は、主に以下の要素に基づいて計算されます。</p>
+<ul>
+<li><strong>ストレージ</strong>: 保存されているデータの量</li>
+<li><strong>データ転送</strong>: S3 からインターネットへのデータ転送量</li>
+<li><strong>リクエスト</strong>: S3 へのリクエスト数</li>
+</ul>
+<p>詳細な料金については、<a href="https://aws.amazon.com/s3/pricing/">AWS S3 の料金ページ</a> を参照してください。</p> </main>  </body></html>
