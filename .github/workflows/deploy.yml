@@ -25,14 +25,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Explicitly install @astrojs/mdx and verify
-        run: |
-          npm install @astrojs/mdx
-          ls -R node_modules/@astrojs/mdx
-
-      - name: Verify tailwindcss installation
-        run: ls -R node_modules/tailwindcss
-
       - name: Rebuild dependencies
         run: npm rebuild
 
